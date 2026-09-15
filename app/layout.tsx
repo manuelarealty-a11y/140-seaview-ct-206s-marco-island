@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title,
     description,
     images: [
-      "https://g.tlcdn.com/view/ac93c1101d874040922e26e1302b00d0.jpg",
+      "https://g.tlcdn.com/view/cf93e4640de441e4874b6bb3a2451998.jpg",
     ],
     type: "website",
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["https://g.tlcdn.com/view/ac93c1101d874040922e26e1302b00d0.jpg"],
+    images: ["https://g.tlcdn.com/view/cf93e4640de441e4874b6bb3a2451998.jpg"],
   },
   robots: { index: true, follow: true },
 };
@@ -43,7 +43,7 @@ export default function RootLayout({
     "@type": "Residence",
     name: "140 Seaview Ct #206S, Admiralty, Marco Island, FL",
     description,
-    image: "https://g.tlcdn.com/view/ac93c1101d874040922e26e1302b00d0.jpg",
+    image: "https://g.tlcdn.com/view/cf93e4640de441e4874b6bb3a2451998.jpg",
     address: {
       "@type": "PostalAddress",
       streetAddress: "140 Seaview Ct #206S",
