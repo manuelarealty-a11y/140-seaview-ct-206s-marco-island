@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SiteFooter } from "@/components/site-footer";
 
 const photos = [
   { src: "https://g.tlcdn.com/view/cf93e4640de441e4874b6bb3a2451998.jpg", alt: "Amazing waterfront aerial view of the Admiralty" },
@@ -203,11 +204,9 @@ export default function ListingPage() {
             manuelarealty@gmail.com
           </a>
         </div>
-        <p className="mt-10 text-xs text-white/40">
-          &copy; {new Date().getFullYear()} Manuela Realty International.
-          All information deemed reliable but not guaranteed.
-        </p>
       </section>
+
+      <SiteFooter />
     </main>
   );
 }
