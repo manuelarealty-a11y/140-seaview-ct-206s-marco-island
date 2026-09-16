@@ -1,16 +1,15 @@
 import Image from "next/image";
 import { SiteFooter } from "@/components/site-footer";
 import { Gallery } from "@/components/gallery";
-import { photos } from "@/lib/photos";
 
 const heroPhotos = [
-  photos[0], // Amazing waterfront aerial view
-  photos[1], // Wide Marco Island beach view
-  photos[2], // Great room (living room)
-  photos[6], // Comfortable floor plan / great room (living room)
-  photos[7], // Kitchen with desk area
-  photos[8], // Kitchen
-  photos[3], // Admiralty building aerial
+  { src: "https://g.tlcdn.com/view/cf93e4640de441e4874b6bb3a2451998.jpg", alt: "Amazing waterfront aerial view of the Admiralty" },
+  { src: "https://g.tlcdn.com/view/4c521b6e98a94055ba2565f5666ba9a4.jpg", alt: "Wide Marco Island beach view" },
+  { src: "https://g.tlcdn.com/view/429f4ba7ab3548a7a1f06ccbe36a2156.jpg", alt: "Great room" },
+  { src: "https://g.tlcdn.com/view/bd3af9c8687f438e842a791e5fda7145.jpg", alt: "Comfortable floor plan / great room" },
+  { src: "https://g.tlcdn.com/view/470d4915b46249c49f089b12b16422db.jpg", alt: "Kitchen with desk area" },
+  { src: "https://g.tlcdn.com/view/65744e14d4b04ad5b4d18e679d5778e0.jpg", alt: "Kitchen" },
+  { src: "https://g.tlcdn.com/view/b8fdfe5fbc76463c8a006788af334c45.jpg", alt: "Admiralty building located right on the beach" },
 ];
 
 const features = [
