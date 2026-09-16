@@ -3,24 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-
-export const photos = [
-  { src: "https://g.tlcdn.com/view/cf93e4640de441e4874b6bb3a2451998.jpg", alt: "Amazing waterfront aerial view of the Admiralty" },
-  { src: "https://g.tlcdn.com/view/4c521b6e98a94055ba2565f5666ba9a4.jpg", alt: "Wide Marco Island beach view" },
-  { src: "https://g.tlcdn.com/view/429f4ba7ab3548a7a1f06ccbe36a2156.jpg", alt: "Great room" },
-  { src: "https://g.tlcdn.com/view/b8fdfe5fbc76463c8a006788af334c45.jpg", alt: "Admiralty building located right on the beach" },
-  { src: "https://g.tlcdn.com/view/bd89d5b9200c423d83d937cd5bac6659.jpg", alt: "Primary bedroom" },
-  { src: "https://g.tlcdn.com/view/c3b1f78e749742daa19cb42e2ddfced0.jpg", alt: "Primary bedroom, second view" },
-  { src: "https://g.tlcdn.com/view/bd3af9c8687f438e842a791e5fda7145.jpg", alt: "Comfortable floor plan / great room" },
-  { src: "https://g.tlcdn.com/view/470d4915b46249c49f089b12b16422db.jpg", alt: "Kitchen with desk area" },
-  { src: "https://g.tlcdn.com/view/65744e14d4b04ad5b4d18e679d5778e0.jpg", alt: "Kitchen" },
-  { src: "https://g.tlcdn.com/view/42ec0bdfcc43436e9fa6982595b4f3cb.jpg", alt: "Lanai off of main living area" },
-  { src: "https://g.tlcdn.com/view/f9c72093ae9c4c5cb825e53f710e2d01.jpg", alt: "Lanai off of primary bedroom" },
-  { src: "https://g.tlcdn.com/view/7ade6a186e2e41b8b53ef9efb42a8707.jpg", alt: "Guest bedroom" },
-  { src: "https://g.tlcdn.com/view/be02de96ab444391a8961dd907962fa8.jpg", alt: "Guest bathroom" },
-  { src: "https://g.tlcdn.com/view/457bb8029a7a4e478970855928cf2dfd.jpg", alt: "Community pool" },
-  { src: "https://g.tlcdn.com/view/d5ce4a52b4a5474f98d81726ed6203e9.jpg", alt: "Tennis and sports courts" },
-];
+import { photos } from "@/lib/photos";
 
 export function Gallery() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);

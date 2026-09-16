@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SiteFooter } from "@/components/site-footer";
-import { Gallery, photos } from "@/components/gallery";
+import { Gallery } from "@/components/gallery";
+import { photos } from "@/lib/photos";
 
 const heroPhotos = [
   photos[0], // Amazing waterfront aerial view
