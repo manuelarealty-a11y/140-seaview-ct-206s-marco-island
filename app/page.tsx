@@ -19,7 +19,15 @@ const photos = [
   { src: "https://g.tlcdn.com/view/d5ce4a52b4a5474f98d81726ed6203e9.jpg", alt: "Tennis and sports courts" },
 ];
 
-const heroPhotos = photos.slice(0, 5);
+const heroPhotos = [
+  photos[0], // Amazing waterfront aerial view
+  photos[1], // Wide Marco Island beach view
+  photos[2], // Great room (living room)
+  photos[6], // Comfortable floor plan / great room (living room)
+  photos[7], // Kitchen with desk area
+  photos[8], // Kitchen
+  photos[3], // Admiralty building aerial
+];
 
 const features = [
   "2 Bedrooms / 2 Bathrooms",
@@ -89,7 +97,12 @@ export default function ListingPage() {
       </section>
 
       <style>{`
-        .hero-slide { opacity: 0; animation: heroFade 20s infinite; }
+        .hero-slide {
+          opacity: 0;
+          animation-name: heroFade;
+          animation-iteration-count: infinite;
+          animation-duration: ${heroPhotos.length * 4}s;
+        }
         @keyframes heroFade {
           0% { opacity: 0; }
           4% { opacity: 1; }
