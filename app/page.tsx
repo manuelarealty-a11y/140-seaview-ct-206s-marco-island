@@ -74,6 +74,18 @@ export default function ListingPage() {
               >
                 Call 239-450-5622
               </a>
+              <a
+                href="sms:+12394505622"
+                className="rounded-full border border-white/70 bg-black/20 px-6 py-3 text-sm font-semibold backdrop-blur-sm hover:bg-white/10"
+              >
+                Text 239-450-5622
+              </a>
+              <a
+                href="mailto:manuelarealty@gmail.com"
+                className="rounded-full border border-white/70 bg-black/20 px-6 py-3 text-sm font-semibold backdrop-blur-sm hover:bg-white/10"
+              >
+                Email Manuela
+              </a>
             </div>
           </div>
         </div>
