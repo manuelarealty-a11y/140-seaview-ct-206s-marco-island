@@ -52,7 +52,17 @@ export function SiteFooter() {
           ))}
         </div>
       </div>
-      <p className="mt-8 text-center text-xs text-white/40">
+      <p className="mt-6 text-center text-sm">
+        <a
+          href="https://naplesrealestate.sale/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-4 transition hover:text-emerald-300"
+        >
+          Privacy Policy
+        </a>
+      </p>
+      <p className="mt-4 text-center text-xs text-white/40">
         &copy; {new Date().getFullYear()} Manuela Realty International. All
         information deemed reliable but not guaranteed.
       </p>
