@@ -16,6 +16,10 @@ export function CookieConsent() {
     } catch {
       setVisible(true);
     }
+    // Allow any link/button to re-open the banner: window.dispatchEvent(new Event("open-cookie-settings"))
+    const reopen = () => setVisible(true);
+    window.addEventListener("open-cookie-settings", reopen);
+    return () => window.removeEventListener("open-cookie-settings", reopen);
   }, []);
 
   function decide(value: "accepted" | "rejected") {
@@ -28,7 +32,21 @@ export function CookieConsent() {
     setVisible(false);
   }
 
-  if (!visible) return <MetaPixel />;
+  if (!visible) {
+    return (
+      <>
+        <MetaPixel />
+        <button
+          type="button"
+          onClick={() => setVisible(true)}
+          className="fixed bottom-3 left-3 z-40 inline-flex items-center gap-1.5 rounded-full bg-slate-900/85 px-3 py-1.5 text-[11px] text-white/90 shadow-lg backdrop-blur hover:bg-slate-900 transition-colors"
+        >
+          <Cookie className="h-3.5 w-3.5 text-amber-300" />
+          Cookie settings
+        </button>
+      </>
+    );
+  }
 
   return (
     <>
