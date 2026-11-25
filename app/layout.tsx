@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArrowLeft } from "lucide-react";
 import "./globals.css";
 
 const siteUrl = "https://admiralty206s.com";
@@ -100,6 +101,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <a
+          href="https://www.naplesrealestate.sale"
+          className="sticky top-0 z-50 flex items-center gap-2 bg-slate-950 px-4 py-2.5 text-sm font-medium text-white/90 transition hover:text-white md:px-14"
+        >
+          <ArrowLeft className="h-4 w-4" />
+          Back to Naples Real Estate
+        </a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
