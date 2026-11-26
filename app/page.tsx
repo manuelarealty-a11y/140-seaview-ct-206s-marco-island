@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SiteFooter } from "@/components/site-footer";
 import { Gallery } from "@/components/gallery";
+import { LeadForm } from "@/components/lead-form";
 
 const heroPhotos = [
   { src: "https://g.tlcdn.com/view/cf93e4640de441e4874b6bb3a2451998.jpg", alt: "Amazing waterfront aerial view of the Admiralty" },
@@ -186,6 +187,8 @@ export default function ListingPage() {
             manuelarealty@gmail.com
           </a>
         </div>
+
+        <LeadForm />
       </section>
 
       <SiteFooter />
